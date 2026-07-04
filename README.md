@@ -20,11 +20,60 @@ Welcome to the **GitHub for Beginners** practice repository! This repo is design
 - ✅ Work with Issues
 - ✅ Basic Git commands and GitHub workflow
 
-## 🎯 Getting Started
+## Prerequisites
+
+Before you begin, make sure you have the following installed. For detailed installation instructions, see [Prerequisites – GitHub 101 (For Beginners).pdf](docs/Prerequisites%20–%20GitHub%20101%20(For%20Beginners).pdf)
+
+### 1. Install Git
+
+#### For Windows:
+1. Download Git from [git-scm.com](https://git-scm.com/download/win)
+2. Run the installer and follow the setup wizard
+3. Use the default settings (recommended for beginners)
+4. Verify installation by opening Command Prompt or PowerShell:
+    ```bash
+    git --version
+    ```
+
+#### For Mac:
+1. Install via Homebrew (recommended):
+    ```bash
+    brew install git
+    ```
+    Or download from [git-scm.com](https://git-scm.com/download/mac)
+2. Verify installation in Terminal:
+    ```bash
+    git --version
+    ```
+
+### 2. Install Visual Studio Code
+1. Download VS Code from [code.visualstudio.com](https://code.visualstudio.com/)
+2. Install the application for your operating system
+3. Install the [VS Code command line tool](https://code.visualstudio.com/docs/editor/command-line) to open projects from terminal
+
+## Instruction Videos
+
+| Language | Video | Status |
+|----------|-------|--------|
+| Sinhala | [Watch Tutorial](https://youtu.be/jABp93fuwWM?si=AkpxohnXalfFy0mH) | ✅ Available |
+| English | [Watch Tutorial](https://www.youtube.com/watch?v=QzVjS2nHpFc&t=2852s) | ✅ Available  |
+
+
+
+
+## Getting Started
+
 
 ### Step 1: Fork This Repository
-1. Click the **"Fork"** button at the top right of this repository
-2. This creates a copy of the repository in your GitHub account
+1. Click the **"Fork"** button at the top right of this repository 
+2. This creates a copy of the repository in your GitHub account For detailed steps, see [How to Fork a Repository](support%20md%20files/fork.md)
+
+> 💡 **Best Practice:** Create a dedicated folder on your Desktop called `workshop` for this project.
+> 
+> 
+> After creating the folder, open your terminal/command prompt from that location before cloning the repository.
+>
+> **For Windows users:** Follow these detailed instructions: [Windows Command Prompt Setup](support%20md%20files/win-cmd.md)
 
 ### Step 2: Clone Your Fork
 ```bash
@@ -73,6 +122,10 @@ git add .
 git commit -m "Add introduction for [Your Name]"
 ```
 
+> ⚠️ **Note:** If you encounter issues like Git not recognizing your name or email during commits, this can prevent you from committing changes.  
+> You can troubleshoot and fix it by following the steps in the support file:  
+> [`Git-Configuration-Troubleshooting.md`](support%20md%20files/Git-Configuration-Troubleshooting.md)
+
 ### Exercise 4: Push Your Branch
 ```bash
 # Push your branch to your fork
@@ -86,27 +139,49 @@ git push origin feature/your-name-introduction
 4. Add a title and description
 5. Click **"Create pull request"**
 
-## 📝 Practice Exercises
+<p align="center">
+    <img src="images/pr-image1.png" alt="GitHub for Beginners banner" />
+</p>
+<p align="center">
+    <img src="images/pr-image2.png" alt="GitHub for Beginners banner" />
+</p>
+<p align="center">
+    <img src="images/pr-image3.png" alt="GitHub for Beginners banner" />
+</p>
 
-### Beginner Level
-- [ ] Fork and clone this repository
-- [ ] Create a branch named `add-your-name`
-- [ ] Add your name to the `student-introductions.md` file
-- [ ] Commit and push your changes
-- [ ] Create a pull request
 
-### Intermediate Level
-- [ ] Create a branch named `feature/add-new-section`
-- [ ] Add a new section to the `practice-file.md`
-- [ ] Create multiple commits for your changes
-- [ ] Push and create a pull request
-- [ ] Create an issue for a new feature suggestion
 
-### Advanced Level
-- [ ] Practice resolving merge conflicts
-- [ ] Rebase your branch on the latest main
-- [ ] Squash multiple commits into one
-- [ ] Review someone else's pull request
+## 🏆 Submission Guidelines
+
+When you complete the exercises:
+
+1. **Move to the main repository (original one)** by switching your remote to the upstream/main repo if needed.
+2. **Create an issue on that branch** using the "Submission" template.
+3. **Include the following information:**
+    - Your GitHub username
+    - Links to your pull requests
+    - Screenshot of your contribution
+    - Brief reflection on what you learned
+
+<p align="center">
+    <img src="images/issue1.png" alt="GitHub for Beginners banner" />
+</p>
+<p align="center">
+    <img src="images/issue2.png" alt="GitHub for Beginners banner" />
+</p>
+
+## 📋 Checklist for Completion
+
+- [ ] Successfully forked the repository
+- [ ] Cloned to local machine
+- [ ] Created at least 2 different branches
+- [ ] Made commits with good commit messages
+- [ ] Pushed branches to GitHub
+- [ ] Created at least 1 pull request
+- [ ] Created at least 1 issue on the main repository
+- [ ] Added your introduction to the student introductions file
+
+
 
 ## 🐛 Working with Issues
 
@@ -117,7 +192,7 @@ git push origin feature/your-name-introduction
    - Bug Report
    - Feature Request
    - Question
-   - Submission Review
+   - Submission 
 
 ### Issue Best Practices
 - Use descriptive titles
@@ -174,29 +249,6 @@ git pull origin main
 # Fetch updates without merging
 git fetch upstream
 ```
-
-## 🏆 Submission Guidelines
-
-When you complete the exercises:
-
-1. **Move to the main repository (original one)** by switching your remote to the upstream/main repo if needed.
-2. **Create an issue on that branch** using the "Submission Review" template.
-3. **Include the following information:**
-    - Your GitHub username
-    - Links to your pull requests
-    - Screenshot of your contribution
-    - Brief reflection on what you learned
-
-## 📋 Checklist for Completion
-
-- [ ] Successfully forked the repository
-- [ ] Cloned to local machine
-- [ ] Created at least 2 different branches
-- [ ] Made commits with good commit messages
-- [ ] Pushed branches to GitHub
-- [ ] Created at least 1 pull request
-- [ ] Created at least 1 issue on the main repository
-- [ ] Added your introduction to the student introductions file
 
 ## 🤝 Contributing
 

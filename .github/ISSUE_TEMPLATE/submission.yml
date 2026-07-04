@@ -1,0 +1,82 @@
+name: Submission
+description: Submit your assessment for review
+title: "[Submission] Your Name"
+labels:
+  - submission
+  - Pending Review
+assignees:
+  - nisalgunawardhana
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submission Form
+        Thank you for submitting your assessment! Please fill out the details below.
+
+  - type: input
+    id: full-name
+    attributes:
+      label: Full Name
+      description: Your full name
+      placeholder: e.g., John Doe
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: Email
+      description: A valid email address (will be used for reviewer follow-up)
+      placeholder: e.g., you@example.com
+    validations:
+      required: true
+
+  - type: input
+    id: linkedin-url
+    attributes:
+      label: LinkedIn Post (optional)
+      description: Link to your LinkedIn profile
+      placeholder: https://www.linkedin.com/in/your-handle
+    validations:
+      required: false
+
+  - type: input
+    id: twitter-url
+    attributes:
+      label: Twitter/X Post (optional)
+      description: Link to your Twitter or X profile
+      placeholder: https://twitter.com/your-handle
+    validations:
+      required: false
+
+
+  - type: input
+    id: university
+    attributes:
+      label: University
+      description: Your university name
+      placeholder: e.g., University of Ruhuna
+    validations:
+      required: true
+
+  - type: input
+    id: pr-link
+    attributes:
+      label: Pull Request Link
+      description: Link to your pull request
+      placeholder: https://github.com/nisalgunawardhana/Github-for-beginners/pull/...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have completed the assessment
+          required: true
+        - label: I have created a pull request to the `submission-reviewer` branch
+          required: true
+        - label: I have filled in all required details in this issue template
+          required: true
